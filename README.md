@@ -77,7 +77,7 @@ Helpful Tweak of VS Code:
   cd larablog
   git init
   git remote add origin [URL COPIED FROM GITHUB]
-  git fetch && git checkout master
+  git fetch && git checkout dev
   git pull
   sudo mv .env.example .env
   composer install
