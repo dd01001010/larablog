@@ -76,10 +76,12 @@ Helpful Tweak of VS Code:
   mkdir larablog
   cd larablog
   git init
-  git remote add origin URL_COPIED_FROM_STEP_5
+  git remote add origin [URL COPIED FROM GITHUB]
   git fetch && git checkout master
   git pull
-  composer dumpautoload
+  sudo mv .env.example .env
+  composer install
+  php artisan key:generate
   php artisan migrate
   php artisan db:seed
   ```
